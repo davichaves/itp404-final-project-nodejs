@@ -5,6 +5,7 @@ module.exports = {
     return new Promise(function(resolve, reject) {
       xkcd(function (data) {
         resolve(data);
+        done();
       });
     });
   },
