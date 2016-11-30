@@ -5,7 +5,6 @@ module.exports = {
     return new Promise(function(resolve, reject) {
       xkcd(function (data) {
         resolve(data);
-        done();
       });
     });
   },
@@ -13,7 +12,6 @@ module.exports = {
     return new Promise(function(resolve, reject) {
       xkcd(postId, function (data) {
         resolve(data);
-        done();
       });
     });
   }
