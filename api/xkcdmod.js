@@ -13,6 +13,7 @@ module.exports = {
     return new Promise(function(resolve, reject) {
       xkcd(postId, function (data) {
         resolve(data);
+        done();
       });
     });
   }
