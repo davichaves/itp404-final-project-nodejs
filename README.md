@@ -4,8 +4,8 @@ This is the api to serve the app ((add link here))
 
 ###API ENDPOINTS
 
-| Endpoint      | what it returns                     |
-|:-------------:|:-----------------------------------:|
-| "/"           | returns the current comic           |
-| "/comics/:id" | returns the comic with the given id |
-| "/random"     | returns a random comic              |
+| Endpoint      | What it returns                     | Example                                         |
+|:-------------:|:-----------------------------------:|:-----------------------------------------------:|
+| "/"           | returns the current comic           |http://xkcd-forum-api.herokuapp.com/             |
+| "/comics/:id" | returns the comic with the given id |http://xkcd-forum-api.herokuapp.com/comics/1702  |
+| "/random"     | returns a random comic              |http://xkcd-forum-api.herokuapp.com/random       |
