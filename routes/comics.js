@@ -4,9 +4,14 @@ var xkcdmod = require('../api/xkcdmod');
 
 /* GET comics listing. */
 router.get('/:postId', function(req, res, next) {
-  xkcdmod.getById(req.params.postId).then(function(data) {
-    res.json(data);
-  });
+  var postId = req.params.postId;
+  if (postId != 404) {
+    xkcdmod.getById(postId).then(function(data) {
+      res.json(data);
+    });
+  } else {
+    res.json({ error: 'This comic does not exist!' });
+  }
 });
 
 module.exports = router;
